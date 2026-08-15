@@ -1,119 +1,116 @@
-# Tasfia's Hacker Lab — টুলিস্ট (v7)
+# Tasfia's Hacker Lab — Tool List (v7)
 
-**rootfs:** Alpine Linux 3.14 x86 (i386) — Alpine Linux 3.14 অফিসিয়াল রিপো
-**মোট:** ২২৫+ প্যাকেজ | ৯২৫+ executable command | missing dependency: 0
+**Rootfs:** Alpine Linux 3.14 x86 (i386) — official Alpine 3.14 repositories
+**Total:** 225+ packages | 925+ executable commands | missing dependencies: 0
 
 ---
 
 ## 🕵️ Pentest / Network Security
 
-| Tool | কাজ |
+| Tool | Purpose |
 |---|---|
 | `nmap` | Network scan, port discovery, OS detection |
-| `masscan` | আল্ট্রা-ফাস্ট পুরো ইন্টারনেট স্ক্যান |
-| `sqlmap` | SQL Injection automation |
+| `masscan` | Ultra-fast full-internet port scan |
+| `sqlmap` | SQL injection automation |
 | `nikto` | Web server vulnerability scanner |
-| `zmap` | এক সময়ে সমগ্র নেট স্ক্যান |
-| `tcpdump` / `tshark` | Packet capture (live ও file analyze) |
+| `zmap` | Whole-network scan in one pass |
+| `tcpdump` / `tshark` | Packet capture (live and file analysis) |
 | `radare2` | Reverse engineering, binary analysis |
-| `strace` / `ltrace` | System/library call tracing |
-| `netcat` / `socat` / `stunnel` | Port listen, tunnel, TCP/UDP relay |
+| `strace` / `ltrace` | System / library call tracing |
+| `netcat` / `socat` / `stunnel` | Port listening, tunnels, TCP/UDP relay |
 | `tcpflow` / `tcpflow-doc` | TCP stream reassembly |
-| `dnsrecon` / `dig` / `whois` | DNS recon |
-| `macchanger` | MAC address change |
-| `proxychains-ng` | Tor/proxy দিয়ে যেকোনো app চালানো |
-| `tor` | Anonymous browsing/traffic |
+| `dnsrecon` / `dig` / `whois` | DNS reconnaissance |
+| `macchanger` | MAC address spoofing |
+| `proxychains-ng` | Run any app through Tor / proxies |
+| `tor` | Anonymous browsing and traffic |
 | `sshpass` | Non-interactive SSH login |
-| `iperf` / `iperf3` | Network speed test |
-| `net-tools` | ifconfig, netstat, route |
+| `iperf` / `iperf3` | Network speed testing |
+| `net-tools` | `ifconfig`, `netstat`, `route` |
 | `arping` | ARP-level network discovery |
 
-## 💻 Dev Tools
+## 💻 Development Tools
 
-| Tool | কাজ |
+| Tool | Purpose |
 |---|---|
-| `gcc` / `g++` | C/C++ compiler |
-| `node` / `npm` / `node-gyp` | JavaScript + build tools |
+| `gcc` / `g++` | C / C++ compilers |
+| `node` / `npm` / `node-gyp` | JavaScript + build toolchain |
 | `python3` + `pip3` | Python + package installer |
-| `ruby` + `bundler` | Ruby |
+| `ruby` + `bundler` | Ruby + dependency manager |
 | `perl` | Perl scripting |
 | `lua5.3` / `tcl` / `expect` | Scripting + automation |
-| `erlang` / `elixir` / `zig` (build from src) | Modern languages |
 | `gcc` / `make` / `cmake` / `meson` | Build systems |
-| `bison` / `flex` / `automake` / `autoconf` | Compiler tools |
-| `gdb` / `valgrind` | Debugging + memory check |
-| `yasm` / `nasm` | Assembler |
+| `bison` / `flex` / `automake` / `autoconf` | Compiler toolchain utilities |
+| `gdb` / `valgrind` | Debugging + memory checking |
+| `yasm` / `nasm` | Assemblers |
 | `git` / `subversion` | Version control |
-| `patch` / `diffutils` | Code patches |
-| `doxygen` / `cppcheck` / `flawfinder` | Docs + static analysis |
-| `ccache` / `distcc` | Fast/distributed compilation |
+| `patch` / `diffutils` | Code patching |
+| `doxygen` / `cppcheck` / `flawfinder` | Documentation + static analysis |
+| `ccache` / `distcc` | Fast / distributed compilation |
 | `swig` | Binding generator |
-| `sqlite3` | Local database |
+| `sqlite3` | Local database engine |
 | `emacs` / `micro` / `nano` | Advanced editors |
 
-## ✏️ Editors (নতুন)
+## ✏️ Editors
 
-| Tool | বিশেষত্ব |
+| Tool | Highlights |
 |---|---|
 | `neovim (nvim)` | Modern vim — plugin-rich |
 | `vim` / `gvim` | Classic vim |
-| `nano` | সহজ editor |
-| `micro` | Modern সহজ editor, mouse support |
-| `joe` / `mg` / `vis` / `bvi` | পুরনো-স্টাইল lightweight editors |
-| `ed` / `hexedit` | Terminal এবং binary editing |
-| `xxd` | Hex dump |
+| `nano` | Simple editor |
+| `micro` | Modern simple editor, mouse support |
+| `joe` / `mg` / `vis` / `bvi` | Old-school lightweight editors |
+| `ed` / `hexedit` | Terminal and binary editing |
+| `xxd` | Hex dumps |
 
-## 🐚 Shells (নতুন)
+## 🐚 Shells
 
-`bash` (default), `zsh`, `fish`, `tcsh`, `dash` + `bash-completion` (Tab completion)
+`bash` (default), `zsh`, `fish`, `tcsh`, `dash` + `bash-completion` (tab completion)
 
 ## 🌐 Network / File Transfer
 
-| Tool | কাজ |
+| Tool | Purpose |
 |---|---|
-| `curl` / `wget` / `curlie` | Web download |
-| `lynx` / `w3m` / `links` | Text-mode web browser |
-| `rsync` | Fast file sync |
+| `curl` / `wget` / `curlie` | Web downloads |
+| `lynx` / `w3m` / `links` | Text-mode web browsers |
+| `rsync` | Fast file synchronization |
 | `smbclient` | Windows share access |
-| `sshfs` | SSH remote folder mount |
-| `openvpn` / `wireguard-tools` | VPN |
-| `rdesktop` / `freerdp` | Windows RDP client |
-| `aria2` / `lftp` | Fast multi-source downloader |
-| `nfs-utils` / `cifs-utils` | NFS/SMB mount tools |
-| `mtr` / `iftop` / `nethogs` | Ping path + network monitor |
+| `sshfs` | Mount remote folders over SSH |
+| `openvpn` / `wireguard-tools` | VPN clients |
+| `rdesktop` / `freerdp` | Windows RDP clients |
+| `aria2` / `lftp` | Fast multi-source downloaders |
+| `nfs-utils` / `cifs-utils` | NFS / SMB mount tools |
+| `mtr` / `iftop` / `nethogs` | Traceroute + bandwidth monitoring |
 
 ## 📦 Archive / Compression
 
 `zip` / `unzip` / `7z` (p7zip) / `xz` / `zstd` / `tar` / `gzip` / `bzip2` / `cabextract`
 
-## 📊 System / Monitor
+## 📊 System / Monitoring
 
-`htop` / `atop` / `sysstat` (iostat, sar) / `procps` (ps, top, free) / `ncdu` / `dust` / `tree` / `tig` (git TUI) / `lsof` / `pv` / `bc` / `colordiff` / `jq` / `yq` / `cloc` / `tokei` (code counter)
+`htop` / `atop` / `sysstat` (iostat, sar) / `procps` (ps, top, free) / `ncdu` / `dust` / `tree` / `tig` (git TUI) / `lsof` / `pv` / `bc` / `colordiff` / `jq` / `yq` / `cloc` / `tokei` (code counters)
 
 ## 🎵 Media
 
-`ffmpeg` / `mpv` / `mplayer` / `imagemagick` / `graphicsmagick` / `sox` / `lame` / `flac` / `opus-tools` / `vorbis-tools` / `cmus` / `moc` / `mpd` / `scrot` (screenshot) / `feh` (image viewer)
+`ffmpeg` / `mpv` / `mplayer` / `imagemagick` / `graphicsmagick` / `sox` / `lame` / `flac` / `opus-tools` / `vorbis-tools` / `cmus` / `moc` / `mpd` / `scrot` (screenshots) / `feh` (image viewer)
 
 ## 🖥️ X11 / VNC
 
-`x11vnc` + `x11vncfull` / `Xvfb` / `xterm` / `twm` / `openbox` / `xauth` / `xdpyinfo` / `xeyes` / `xclock` / `xcalc` / `xscreensaver` / `xset` / `dialog` + `startvnc` script
+`x11vnc` + `x11vncfull` / `Xvfb` / `xterm` / `twm` / `openbox` / `xauth` / `xdpyinfo` / `xeyes` / `xclock` / `xcalc` / `xscreensaver` / `xset` / `dialog` + the `startvnc` launcher script
 
 ## 🎭 Fun / TUI
 
-`cmatrix` / `asciiquarium` / `sl` / `fortune` / `figlet` / `asciinema` (record) / `neofetch` / `tmux` / `screen`
+`cmatrix` / `asciiquarium` / `sl` / `fortune` / `figlet` / `asciinema` (terminal recording) / `neofetch` / `tmux` / `screen`
 
-## 🐍 Python Packages (pre-installed)
+## 🐍 Pre-installed Python Packages
 
-`scapy` / `impacket` / `pyftpdlib` / `pysocks` / `psutil` / `requests` / `lxml` / `paramiko` / `cryptography` / `flask` / `tornado` / `pytest` / `pyyaml` / `beautifulsoup4` / `jinja2` / `pexpect` / `pyserial` / `virtualenv` + `pip3` available for more
+`scapy` / `impacket` / `pyftpdlib` / `pysocks` / `psutil` / `requests` / `lxml` / `paramiko` / `cryptography` / `flask` / `tornado` / `pytest` / `pyyaml` / `beautifulsoup4` / `jinja2` / `pexpect` / `pyserial` / `virtualenv` + `pip3` ready for more
 
 ---
 
-## ⚠️ যা এখনো নেই (Alpine 3.14-এ নেই / বড়)
+## ⚠️ Not included (missing from Alpine 3.14 repos or too heavy)
 
-- `john` (JtR), `gobuster`, `ffuf`, `hydra` — ৩.১৪ রিপোতে নেই
-- `java` / `metasploit` / `Burp Suite` — iSH-এ অসম্ভব
-- `php` (light) — চাইলে v8-এ যোগ করা যায়
+- `john` (JtR), `gobuster`, `ffuf`, `hydra` — not available in the 3.14 repositories
+- `java` / `metasploit` / `Burp Suite` — impossible on iSH
+- `php` (lightweight) — can be added on request
 
-**বাকি থাকা যোগ করার উপযোগী tool (v8-এ):** `aircrack-ng`, `httpie`, `man` pages, `psmisc` (fuser/pstree), `freerdp`, `elinks`, `aria2`, `lftp`, `dropbear`, `neofetch`, `xdotool`, `xclip`, `erlang`, `elixir`, `lua5.4`, `gifsicle`, `optipng`, `pngcrush`, `audacious`, `openssh-server`
-
-চাইলে বলুন — v8 বানিয়ে দেব! 😊
+**Good candidates for a future v8 release:** `aircrack-ng`, `httpie`, `man` pages, `psmisc` (fuser/pstree), `freerdp`, `elinks`, `aria2`, `lftp`, `dropbear`, `neofetch`, `xdotool`, `xclip`, `erlang`, `elixir`, `lua5.4`, `gifsicle`, `optipng`, `pngcrush`, `audacious`, `openssh-server`

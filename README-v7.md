@@ -6,40 +6,40 @@
 
 ---
 
-## নতুন কী আছে v7-তে? (What's new)
+## What's new in v7?
 
-| ক্যাটাগরি | Tools |
+| Category | Tools |
 |---|---|
-| সিস্টেম মনিটর | `htop`, `atop`, `sysstat` (iostat/sar/mpstat), `procps` |
-| নতুন এডিটর | `neovim (nvim)`, `nano`, `micro`, `joe`, `vis`, `mg`, `bvi` (binary vim) |
-| নতুন শেল | `zsh`, `fish`, `tcsh`, `dash` |
-| টেক্সট টুল | `jq` (JSON), `yq`, `cloc` (code counter), `tokei`, `figlet` |
-| প্যাকেট/নেট | `sshpass`, `ltrace`, `tcpflow`, `zmap`, `mtr`, `bind-tools` (dig/nslookup), `openvpn`, `wireguard-tools` (wg), `sshfs`, `rdesktop` |
-| অডিও/মিডিয়া | `sox`, `lame`, `flac`, `opus-tools`, `vorbis-tools`, `cmus`, `moc`, `mpd`, `alsa-utils` |
-| মজা | `cmatrix` (matrix rain!), `asciinema` (record terminal), `xeyes`, `xclock`, `xcalc`, `xscreensaver` |
-| ডেভ | `lua5.3`, `tcl`, `expect`, `meson`, `swig`, `doxygen`, `ccache`, `distcc`, `cppcheck`, `flawfinder`, `subversion` |
-| পাইথন extra | `psutil`, `pyyaml`, `flask`, `tornado`, `pytest`, `pexpect`, `pyserial`, `requests` ইত্যাদি |
-| **ব্যানার** | লগইন করলেই রঙিন "Tasfia's Hacker Lab" বক্স দেখাবে! |
+| System monitoring | `htop`, `atop`, `sysstat` (iostat/sar/mpstat), `procps` |
+| New editors | `neovim (nvim)`, `nano`, `micro`, `joe`, `vis`, `mg`, `bvi` (binary vim) |
+| New shells | `zsh`, `fish`, `tcsh`, `dash` |
+| Text tools | `jq` (JSON), `yq`, `cloc` (code counter), `tokei`, `figlet` |
+| Packet / network | `sshpass`, `ltrace`, `tcpflow`, `zmap`, `mtr`, `bind-tools` (dig/nslookup), `openvpn`, `wireguard-tools` (wg), `sshfs`, `rdesktop` |
+| Audio / media | `sox`, `lame`, `flac`, `opus-tools`, `vorbis-tools`, `cmus`, `moc`, `mpd`, `alsa-utils` |
+| Fun | `cmatrix` (matrix rain!), `asciinema` (record terminal), `xeyes`, `xclock`, `xcalc`, `xscreensaver` |
+| Development | `lua5.3`, `tcl`, `expect`, `meson`, `swig`, `doxygen`, `ccache`, `distcc`, `cppcheck`, `flawfinder`, `subversion` |
+| Python extras | `psutil`, `pyyaml`, `flask`, `tornado`, `pytest`, `pexpect`, `pyserial`, `requests`, and more |
+| **Banner** | A colored "Tasfia's Hacker Lab" box on every login! |
 
-সব আগের tool-ও আছে: `nmap`, `masscan`, `sqlmap`, `tshark`, `radare2`, `gcc`, `node`/`npm`, `python3`, `tmux`, `emacs`, `ffmpeg`, `lynx`, `smbclient`, `7z`, `htop`...
+All previous tools are still included: `nmap`, `masscan`, `sqlmap`, `tshark`, `radare2`, `gcc`, `node`/`npm`, `python3`, `tmux`, `emacs`, `ffmpeg`, `lynx`, `smbclient`, `7z`, `htop`, and more.
 
 ---
 
-## কীভাবে ব্যবহার করবেন (How to use)
+## How to use
 
-1. iSH → **Settings → Filesystems** → আগের rootfs **Delete** করুন
-2. **Import** → নতুন `kali-vnc-prebuilt-ish.tar.gz` সিলেক্ট → Mount = `/`
-3. Terminal-এ: `startvnc xvfb`
-4. bVNC: **Host = 127.0.0.1, Port = 5900** (আলাদা ফিল্ডে), iSH foreground-এ
-5. বন্ধ করতে: `startvnc stop`
+1. iSH → **Settings → Filesystems** → **Delete** the old rootfs
+2. **Import** → select the new `kali-vnc-prebuilt-ish.tar.gz` → Mount = `/`
+3. In the terminal, run: `startvnc xvfb`
+4. In bVNC: **Host = 127.0.0.1, Port = 5900** (in separate fields), keep iSH in the foreground
+5. To stop: `startvnc stop`
 
-> ⚠️ ফোনে ~4 GB খালি জায়গা রাখুন (extract = ~2.6 GB)
+> ⚠️ Keep ~4 GB of free space on your device (extracted size ≈ 2.6 GB)
 
 ---
 
 ## Tasfia's Banner
 
-লগইন করলেই দেখাবে:
+You will see this on every login:
 
 ```
   ╔═══════════════════════════════════════════╗
@@ -49,5 +49,5 @@
   VNC:  startvnc xvfb     Tools: tools     Update: update
 ```
 
-রঙ বদলাতে চাইলে `/root/.tasfia_banner` ফাইল এডিট করুন (ANSI color code দিয়ে)।
-নিজের নামে banner বানাতে: `figlet -f slant "আপনার নাম"`
+To change the colors, edit `/root/.tasfia_banner` (it uses ANSI color codes).
+To generate your own banner: `figlet -f slant "your name"`
